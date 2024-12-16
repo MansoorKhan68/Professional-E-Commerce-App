@@ -22,7 +22,7 @@ class LoginHeader extends StatelessWidget {
                 AssetImage(dark ? TImages.lightAppLogo : TImages.darkAppLogo)),
         Text(
           TTexts.loginTitle,
-          style: Theme.of(context).textTheme.titleMedium,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
         SizedBox(
           height: TSizes.sm,
