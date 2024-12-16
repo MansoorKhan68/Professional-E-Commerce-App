@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:khyber_kart/features/login/login_screen.dart';
+import 'package:khyber_kart/features/authentication/screens/login/login_screen.dart';
 
 class OnBoardingContoller extends GetxController {
   static OnBoardingContoller get instance => Get.find();
