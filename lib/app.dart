@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:khyber_kart/features/authentication/screens/onboarding_screen/onboarding_screen.dart';
+import 'package:khyber_kart/utils/constants/colors.dart';
 import 'package:khyber_kart/utils/constants/text_strings.dart';
 import 'package:khyber_kart/utils/theme/theme.dart';
 
@@ -16,7 +16,13 @@ class App extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       // initialBinding: GeneralBindings(),
-      home: const Scaffold(body: OnboardingScreen()),
+      home: const Scaffold(
+          backgroundColor: TColors.primary,
+          body: Center(
+            child: CircularProgressIndicator(
+              color: TColors.white,
+            ),
+          )),
     );
   }
 }
