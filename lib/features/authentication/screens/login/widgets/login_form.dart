@@ -44,7 +44,10 @@ class LoginForm extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               /// Remember me
-              Checkbox(value: true, onChanged: (value) {}),
+              SizedBox(
+                  height: 24,
+                  width: 24,
+                  child: Checkbox(value: true, onChanged: (value) {})),
               Text(TTexts.rememberMe),
 
               /// forget password

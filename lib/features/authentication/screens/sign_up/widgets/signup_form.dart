@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:khyber_kart/features/authentication/screens/sign_up/verify_email.dart';
 import 'package:khyber_kart/features/authentication/screens/sign_up/widgets/signup_terms_and_conditions.dart';
 import 'package:khyber_kart/utils/constants/sizes.dart';
 import 'package:khyber_kart/utils/constants/text_strings.dart';
@@ -95,7 +97,8 @@ class SignUpForm extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-              onPressed: () {}, child: Text(TTexts.createAccount)),
+              onPressed: () => Get.to(() => VerifyEmailScreen()),
+              child: Text(TTexts.createAccount)),
         ),
         SizedBox(
           height: TSizes.spaceBtwSections,

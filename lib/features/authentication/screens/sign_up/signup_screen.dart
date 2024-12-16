@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:khyber_kart/commons/widgets/form_divider.dart';
-import 'package:khyber_kart/commons/widgets/social_buttons.dart';
+import 'package:khyber_kart/commons/widgets/login_signup/form_divider.dart';
+import 'package:khyber_kart/commons/widgets/login_signup/social_buttons.dart';
 import 'package:khyber_kart/features/authentication/screens/sign_up/widgets/signup_form.dart';
 import 'package:khyber_kart/utils/constants/sizes.dart';
 import 'package:khyber_kart/utils/constants/text_strings.dart';
