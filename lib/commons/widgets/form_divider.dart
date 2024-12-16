@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:khyber_kart/utils/constants/colors.dart';
-import 'package:khyber_kart/utils/constants/text_strings.dart';
 
 class FormDivider extends StatelessWidget {
   const FormDivider({
     super.key,
     required this.dark,
+    required this.dividerText,
   });
 
   final bool dark;
+  final String dividerText;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class FormDivider extends StatelessWidget {
           endIndent: 5,
         )),
         Text(
-          TTexts.orSignInWith.capitalize!,
+          dividerText.capitalize!,
           style: Theme.of(context).textTheme.labelMedium,
         ),
         Expanded(

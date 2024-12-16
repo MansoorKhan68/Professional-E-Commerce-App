@@ -1,41 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:khyber_kart/commons/styles/spacing_style.dart';
 import 'package:khyber_kart/commons/widgets/form_divider.dart';
-import 'package:khyber_kart/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:khyber_kart/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:khyber_kart/commons/widgets/social_buttons.dart';
+import 'package:khyber_kart/features/authentication/screens/sign_up/widgets/signup_form.dart';
 import 'package:khyber_kart/utils/constants/sizes.dart';
 import 'package:khyber_kart/utils/constants/text_strings.dart';
 import 'package:khyber_kart/utils/helpers/helper_functions.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: TSpacingStyle.paddingWithAppbarHeight,
+          padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
-              /* --------- logo, title, and sub-title -----------*/
-              LoginHeader(dark: dark),
-              /* --------- FORM -----------*/
-              LoginForm(),
-
-              /// Divider
-              FormDivider(
-                dark: dark,
-                dividerText: TTexts.orSignInWith,
+              /// title text
+              Text(
+                TTexts.signupTitle,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
               SizedBox(
                 height: TSizes.spaceBtwSections,
               ),
 
-              /// Footer
-              SocialButtons()
+              /// FORM
+              SignUpForm(dark: dark),
+              FormDivider(dark: dark, dividerText: TTexts.orSignUpWith),
+              SizedBox(
+                height: TSizes.spaceBtwSections,
+              ),
+              SocialButtons(),
             ],
           ),
         ),

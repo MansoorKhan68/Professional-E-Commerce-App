@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:khyber_kart/features/authentication/screens/sign_up/signup_screen.dart';
 import 'package:khyber_kart/utils/constants/sizes.dart';
 import 'package:khyber_kart/utils/constants/text_strings.dart';
 
@@ -76,7 +78,10 @@ class LoginForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                  onPressed: () {}, child: Text(TTexts.createAccount))),
+                  onPressed: () {
+                    Get.to(() => const SignupScreen());
+                  },
+                  child: Text(TTexts.createAccount))),
           SizedBox(
             height: TSizes.spaceBtwSections,
           ),
