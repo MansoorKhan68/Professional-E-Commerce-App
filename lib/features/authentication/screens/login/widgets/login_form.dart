@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:khyber_kart/features/authentication/screens/login/forget_password/forget_password.dart';
 import 'package:khyber_kart/features/authentication/screens/sign_up/signup_screen.dart';
 import 'package:khyber_kart/utils/constants/sizes.dart';
 import 'package:khyber_kart/utils/constants/text_strings.dart';
@@ -55,7 +56,7 @@ class LoginForm extends StatelessWidget {
                 padding:
                     const EdgeInsets.only(bottom: TSizes.spaceBtwItems / 4),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => ForgetPasswordScreen()),
                   child: Text(
                     TTexts.forgetPassword,
                   ),
