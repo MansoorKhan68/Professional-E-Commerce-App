@@ -25,7 +25,7 @@ class LoginScreen extends StatelessWidget {
               /* --------- FORM -----------*/
               LoginForm(),
 
-              /// Divider
+              /* ---------DIVIDER -----------*/
               FormDivider(
                 dark: dark,
                 dividerText: TTexts.orSignInWith,
@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                 height: TSizes.spaceBtwSections,
               ),
 
-              /// Footer
+               /* ---------FOOTER -----------*/
               SocialButtons()
             ],
           ),
